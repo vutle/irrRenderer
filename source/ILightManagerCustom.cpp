@@ -46,7 +46,7 @@ irr::scene::ILightManagerCustom::~ILightManagerCustom()
 
 void irr::scene::ILightManagerCustom::OnPreRender(core::array<ISceneNode*> & lightList)
 {
-    Device->getVideoDriver()->setRenderTarget(MRTs, false, true);
+    Device->getVideoDriver()->setRenderTarget(MRTs, true, true);
 }
 
 void irr::scene::ILightManagerCustom::OnPostRender()
